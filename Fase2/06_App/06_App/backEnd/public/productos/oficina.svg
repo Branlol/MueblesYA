@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Oficina">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a6b4d"/><stop offset="1" stop-color="#2c3a24"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<g fill="#f5e6d3" opacity="0.92"><rect x="180" y="190" width="440" height="24" rx="4"/><rect x="200" y="214" width="22" height="130"/><rect x="578" y="214" width="22" height="130"/><rect x="400" y="214" width="170" height="70"/></g>
+<text x="400" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#fff">Oficina</text>
+</svg>

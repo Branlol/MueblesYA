@@ -1,0 +1,59 @@
+/* ===== MueblesYA · hoja de estilos principal =====
+   Paleta (alto contraste): marrón #5b3a29 sobre crema #f5e6d3 / blanco. */
+:root {
+  --marron: #5b3a29;
+  --marron-osc: #3e2518;
+  --crema: #f5e6d3;
+  --acento: #c8782b;       /* color para la letra capital */
+  --nav-alto: 64px;
+}
+
+body { background: #fffaf4; color: #2b1f18; font-family: 'Segoe UI', system-ui, sans-serif; }
+
+/* Compensa la barra fija para que no tape el contenido */
+.main-content { padding-top: calc(var(--nav-alto) + 8px); min-height: 70vh; }
+
+/* Barra de menús fija */
+.navbar-brand-bar { background: var(--marron); min-height: var(--nav-alto); box-shadow: 0 2px 6px rgba(0,0,0,.25); }
+.navbar-brand-bar .nav-link { color: var(--crema); }
+.navbar-brand-bar .nav-link:hover,
+.navbar-brand-bar .nav-link.active { color: #fff; text-decoration: underline; }
+
+.titulo-marca { color: var(--marron); letter-spacing: .5px; }
+
+/* Botón de marca */
+.btn-brand { background: var(--marron); border-color: var(--marron); color: #fff; }
+.btn-brand:hover, .btn-brand:focus { background: var(--marron-osc); border-color: var(--marron-osc); color: #fff; }
+
+/* Texto con estilo: primera letra grande y a color (letra capital) */
+.letra-capital::first-letter {
+  font-size: 3.4rem; font-weight: 700; color: var(--acento);
+  float: left; line-height: .9; padding-right: .5rem;
+}
+
+/* Carrusel responsivo con altura controlada */
+.hero-carousel img { max-height: 420px; object-fit: cover; }
+.caption-bg { background: rgba(0,0,0,.45); border-radius: 8px; }
+
+/* Tarjetas con efecto de elevación */
+.product-card, .categoria-card { transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover, .categoria-card:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,.15); }
+
+/* Footer */
+.site-footer { background: var(--marron-osc); color: var(--crema); }
+.footer-link { color: var(--crema); text-decoration: none; }
+.footer-link:hover, .footer-link:focus { color: #fff; text-decoration: underline; }
+.foto-miembro { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--marron); }
+
+/* Foco visible (accesibilidad) */
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--acento); outline-offset: 2px; }
+
+/* Tablets */
+@media (max-width: 991.98px) { .hero-carousel img { max-height: 320px; } }
+/* Celulares */
+@media (max-width: 575.98px) {
+  .hero-carousel img { max-height: 220px; }
+  .letra-capital::first-letter { font-size: 2.6rem; }
+  .caption-bg h3 { font-size: 1rem; }
+  .caption-bg p { display: none; }
+}

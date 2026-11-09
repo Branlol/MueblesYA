@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Dormitorios">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d5e6b"/><stop offset="1" stop-color="#25323b"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<g fill="#f5e6d3" opacity="0.92"><rect x="170" y="150" width="460" height="60" rx="10"/><rect x="170" y="210" width="460" height="90" rx="10"/><rect x="190" y="300" width="22" height="50"/><rect x="588" y="300" width="22" height="50"/></g>
+<text x="400" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#fff">Dormitorios</text>
+</svg>

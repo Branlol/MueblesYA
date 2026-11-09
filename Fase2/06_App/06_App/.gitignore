@@ -1,0 +1,4 @@
+node_modules
+dist
+backEnd/uploads/*
+!backEnd/uploads/.gitkeep
